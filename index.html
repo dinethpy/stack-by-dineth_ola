@@ -105,7 +105,7 @@ button { width: auto; padding: 10px 20px; }
 <div id="main">
   <div class="pixel-head" id="head"></div> <!-- Head now just bobs -->
   <div class="pixel-boy blink" id="boy"></div>
-  <div class="speech-bubble" id="bubble">Dineth ta hithena widiyata me loke prettiest ma kena kawda?    (Hint:She has short hair😌)</div>
+  <div class="speech-bubble" id="bubble">What is the name of Dineth's mother?)</div>
   <input type="text" id="answer" placeholder="Enter name">
 </div>
 
@@ -155,7 +155,7 @@ function spawnHearts(){
 
 function showGoAgainScreen(){
   result.innerHTML = `
-    <div class="speech-bubble">Damn right!!😤   mn godaaak adarei sookiri patiyo😌❤️</div>
+    <div class="speech-bubble">Correct!😌❤️</div>
     <button onclick="location.reload()">Go Again</button>
   `;
   result.style.display="block";
@@ -164,7 +164,7 @@ function showGoAgainScreen(){
 document.getElementById("answer").addEventListener("keypress",function(e){
   if(e.key==="Enter"){
     let val=e.target.value.trim();
-    if(val.toLowerCase()==="onela","🌹 on est la🌹"){
+    if(val.toLowerCase()==="Irani"){
       document.body.style.background="pink";
       spawnHearts();
       main.style.display="none";
